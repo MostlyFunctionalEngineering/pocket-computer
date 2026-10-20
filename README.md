@@ -8,7 +8,7 @@ from a 10000 mAh battery. It features custom aliased commands for e-ink refreshi
 
 Here's my youtube video showcasing the build process: https://youtu.be/sdcX1ghOkFM
 
-![YTThumbnail](docs\yt_thumbnail.jpg)
+![YTThumbnail](docs/yt_thumbnail.jpg)
 
 ## Build it
 

@@ -40,4 +40,4 @@ the people who wrote it.
 ## This project's own files
 
 `src/main_display.py`, the systemd service files, the config snippet, the aliases, the
-installer and the documentation are original to this project. License: TODO.
+installer and the documentation are original to this project. License: [MIT License](LICENSE)
