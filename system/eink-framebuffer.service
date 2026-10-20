@@ -1,0 +1,16 @@
+# Installed on the Pi at /etc/systemd/system/eink-framebuffer.service
+# Mirrors /dev/fb0 (400x300) to the Waveshare 4.2" V2 e-paper over SPI.
+[Unit]
+Description=E-Ink Framebuffer Mirroring Service
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pocketcomputer/e-Paper/RaspberryPi_JetsonNano/python/examples/main_display.py
+WorkingDirectory=/home/pocketcomputer/e-Paper/RaspberryPi_JetsonNano/python/examples
+Restart=always
+StandardOutput=journal
+StandardError=journal
+User=pocketcomputer
+
+[Install]
+WantedBy=multi-user.target

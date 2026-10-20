@@ -1,0 +1,13 @@
+# Installed on the Pi (originally at /lib/systemd/system/cardkb.service).
+# Runs the ~/cardkb package as root (no User= line) so it can open /dev/uinput
+# and read the CardKB over I2C bus 1 (address 0x5F).
+[Unit]
+Description=Service for using CardKB with Raspberry Pi
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pocketcomputer/cardkb
+
+[Install]
+WantedBy=multi-user.target

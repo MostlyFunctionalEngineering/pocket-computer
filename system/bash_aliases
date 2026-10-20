@@ -1,0 +1,6 @@
+# ~/.bash_aliases
+# `refresh` and `clear` drop a flag file that main_display.py watches for;
+# it then does a full e-paper refresh. Works over SSH too, since the flag
+# lives in /tmp and the aliases load in any interactive shell.
+alias refresh='touch /tmp/eink_force_refresh'
+alias clear='touch /tmp/eink_force_refresh && command clear'

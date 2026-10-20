@@ -1,0 +1,9 @@
+# The Pi runs these on Linux, so keep Unix line endings even when committed from Windows.
+* text=auto eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.zip binary
+*.stl binary
+*.step binary
+*.3mf binary
